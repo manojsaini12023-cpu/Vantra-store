@@ -13,11 +13,12 @@ async function startServer() {
     // 2. Create Express app
     const app = createApp()
 
-    // 3. Start listening
-    app.listen(PORT, () => {
+    // 3. Start listening on 0.0.0.0 for Render & cloud deployment
+    const HOST = '0.0.0.0'
+    app.listen(PORT, HOST, () => {
       console.log(`=========================================`)
       console.log(`  VANTA Streetwear API Server Running     `)
-      console.log(`  Port: http://localhost:${PORT}          `)
+      console.log(`  Host: ${HOST}:${PORT}                   `)
       console.log(`  Health: http://localhost:${PORT}/api/health`)
       console.log(`=========================================`)
     })
