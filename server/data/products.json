@@ -1,0 +1,476 @@
+[
+  {
+    "id": 1,
+    "title": "UNLEASH THE DRAGON TEE",
+    "price": "₹3,799",
+    "numericPrice": 3799,
+    "category": "T-Shirt",
+    "gender": "Unisex",
+    "image": "/products/tshirt-unleash-dragon.png",
+    "fit": "flatlay",
+    "isFeatured": true,
+    "stock": 25,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Heavyweight 240 GSM French Terry cotton tee with high-density dragon artwork print and relaxed boxy drape."
+  },
+  {
+    "id": 2,
+    "title": "HOT WHEELS RAGLAN TEE",
+    "price": "₹3,499",
+    "numericPrice": 3499,
+    "category": "T-Shirt",
+    "gender": "Unisex",
+    "image": "/products/tshirt-hotwheels.png",
+    "fit": "flatlay",
+    "isFeatured": true,
+    "stock": 18,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Contrast raglan sleeve vintage streetwear tee featuring automotive graphic print and drop shoulders."
+  },
+  {
+    "id": 3,
+    "title": "OVERDRIVE RACING MOTO TEE",
+    "price": "₹3,999",
+    "numericPrice": 3999,
+    "category": "T-Shirt",
+    "gender": "Men",
+    "image": "/products/tshirt-overdrive.png",
+    "fit": "flatlay",
+    "isFeatured": true,
+    "stock": 12,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Motorsport-inspired heavy wash jersey with screenprinted racing typography and distressed ribbed crewneck."
+  },
+  {
+    "id": 4,
+    "title": "GENTLE DESIRES OVERSIZED TEE",
+    "price": "₹3,299",
+    "numericPrice": 3299,
+    "category": "T-Shirt",
+    "gender": "Unisex",
+    "image": "/products/tshirt-gentle-desires.png",
+    "fit": "flatlay",
+    "isFeatured": false,
+    "stock": 30,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Minimalist oversized silhouette in vintage stone-washed cotton with tonal back embroidery."
+  },
+  {
+    "id": 5,
+    "title": "TAKE IT EASY GRAFFITI TEE",
+    "price": "₹2,999",
+    "numericPrice": 2999,
+    "category": "T-Shirt",
+    "gender": "Unisex",
+    "image": "/products/tshirt-take-it-easy.png",
+    "fit": "flatlay",
+    "isFeatured": true,
+    "stock": 15,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Rebellious urban graphic tee with graffiti-inspired puff print on ultra-soft combed cotton."
+  },
+  {
+    "id": 6,
+    "title": "JOURNEY HOODIE",
+    "price": "₹7,999",
+    "numericPrice": 7999,
+    "category": "Hoodie",
+    "gender": "Unisex",
+    "image": "/products/crimsondragonoversizedt-shirt_-1789379734223.webp",
+    "fit": "",
+    "isFeatured": false,
+    "stock": 20,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "450 GSM heavyweight fleece hoodie with double-layer hood, brushed interior, and dropped shoulders."
+  },
+  {
+    "id": 7,
+    "title": "BLOCK HOODIE",
+    "price": "₹8,999",
+    "numericPrice": 8999,
+    "category": "Hoodie",
+    "gender": "Men",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80",
+    "fit": "",
+    "isFeatured": false,
+    "stock": 14,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Color-blocked architectural hoodie crafted from custom-dyed loopback cotton terry."
+  },
+  {
+    "id": 8,
+    "title": "MONO SHIRT",
+    "price": "₹4,999",
+    "numericPrice": 4999,
+    "category": "Shirt",
+    "gender": "Men",
+    "image": "https://images.unsplash.com/photo-1521369909026-2afed882baee?auto=format&fit=crop&w=900&q=80",
+    "fit": "",
+    "isFeatured": false,
+    "stock": 16,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Tailored boxy overshirt with concealed horn button placket and utility chest flap pockets."
+  },
+  {
+    "id": 9,
+    "title": "RAW SHIRT",
+    "price": "₹5,999",
+    "numericPrice": 5999,
+    "category": "Shirt",
+    "gender": "Women",
+    "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80",
+    "fit": "",
+    "isFeatured": false,
+    "stock": 22,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Raw-hem unstructured shirt woven in premium Japanese cotton-linen blend for effortless layering."
+  },
+  {
+    "id": 10,
+    "title": "BNKRS 92 OFF-SHOULDER CROP SWEATSHIRT",
+    "price": "₹3,499",
+    "numericPrice": 3499,
+    "category": "Hoodie",
+    "gender": "Women",
+    "image": "/products/women-bnkrs-crop-sweatshirt.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 20,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Raw-hem off-shoulder cropped fleece sweatshirt in pale butter yellow, featuring vintage collegiate BNKRS 92 screenprint and ribbed drop sleeves."
+  },
+  {
+    "id": 11,
+    "title": "RED DRAGON OVERSIZED GRAPHIC TEE",
+    "price": "₹3,799",
+    "numericPrice": 3799,
+    "category": "T-Shirt",
+    "gender": "Women",
+    "image": "/products/women-dragon-oversized-tee.jpg",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 25,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Vibrant crimson heavyweight 240 GSM combed cotton tee featuring mythical azure Japanese dragon artwork and relaxed drop-shoulder drape."
+  },
+  {
+    "id": 12,
+    "title": "BUSY BUZZIN' OVERSIZED VINTAGE TEE",
+    "price": "₹3,299",
+    "numericPrice": 3299,
+    "category": "T-Shirt",
+    "gender": "Women",
+    "image": "/products/women-bee-oversized-tee.jpg",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 18,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Stone cream organic cotton tee with giant archival bee illustration, gothic red typography, and distressed vintage wash."
+  },
+  {
+    "id": 13,
+    "title": "NEON PINK STREETWEAR DAD CAP",
+    "price": "₹1,999",
+    "numericPrice": 1999,
+    "category": "Shirt",
+    "gender": "Women",
+    "image": "/products/women-pink-cap.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 35,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "High-saturation bubblegum pink 6-panel low-profile curved brim baseball cap with adjustable metal back clasp."
+  },
+  {
+    "id": 14,
+    "title": "POISON SCORPION OVERSIZED TEE",
+    "price": "₹3,899",
+    "numericPrice": 3899,
+    "category": "T-Shirt",
+    "gender": "Women",
+    "image": "/products/women-poison-scorpion-tee.jpg",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Midnight black heavy jersey tee featuring high-voltage blue electric scorpion artwork, metal eyelet aesthetics, and gothic Poison typography."
+  },
+  {
+    "id": 15,
+    "title": "SPIDER-MAN RETRO POSTAGE OVERSIZED TEE",
+    "price": "₹3,499",
+    "numericPrice": 3499,
+    "category": "T-Shirt",
+    "gender": "Men",
+    "image": "/products/men-spiderman-red-tee.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 28,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Vibrant crimson heavy-gauge 260 GSM boxy streetwear tee with stamp-framed Spider-Man comic artwork print."
+  },
+  {
+    "id": 16,
+    "title": "MILES MORALES GLITCH STREET TEE",
+    "price": "₹3,699",
+    "numericPrice": 3699,
+    "category": "T-Shirt",
+    "gender": "Men",
+    "image": "/products/men-spiderman-miles-tee.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 22,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Washed charcoal drop-shoulder oversized tee featuring Miles Morales glitch-split mask typography on back."
+  },
+  {
+    "id": 17,
+    "title": "WILD & FREE GEOMETRIC WOLF TEE",
+    "price": "₹3,299",
+    "numericPrice": 3299,
+    "category": "T-Shirt",
+    "gender": "Men",
+    "image": "/products/men-wolf-graphic-tee.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 25,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Warm sand stone-washed cotton tee with dual-tone geometric half-wolf artwork and typography back print."
+  },
+  {
+    "id": 18,
+    "title": "HORIZON BLUE RIBBED BABY TEE",
+    "price": "₹2,699",
+    "numericPrice": 2699,
+    "category": "T-Shirt",
+    "gender": "Women",
+    "image": "/products/women-blue-baby-tee.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 30,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Fitted slate-blue cropped baby tee in soft stretch-rib cotton with micro cap sleeves and crew neckline."
+  },
+  {
+    "id": 19,
+    "title": "TACTICAL OLIVE CORSET HALTER TOP",
+    "price": "₹3,899",
+    "numericPrice": 3899,
+    "category": "Shirt",
+    "gender": "Women",
+    "image": "/products/women-olive-halter-corset.jpg",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 18,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "Structured military olive denim halterneck top with front metal zipper, contrasting tan leather collar trim, and contoured panels."
+  },
+  {
+    "id": 20,
+    "title": "CRIMSON RED OVERSIZED STREETWEAR HOODIE",
+    "price": "₹4,499",
+    "numericPrice": 4499,
+    "category": "Hoodie",
+    "gender": "Women",
+    "image": "/products/women-crimson-oversized-hoodie.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 24,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Vibrant scarlet red 380 GSM heavyweight cotton fleece oversized hoodie with front kangaroo pocket, drop shoulder silhouette, and minimalist white chest embroidery."
+  },
+  {
+    "id": 21,
+    "title": "SPIDER-WEB EMBROIDERED WHITE HOODIE",
+    "price": "₹4,899",
+    "numericPrice": 4899,
+    "category": "Hoodie",
+    "gender": "Women",
+    "image": "/products/women-spider-web-white-hoodie.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 20,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Clean optical white heavyweight fleece hoodie featuring striking scarlet red spider-web embroidered chest centerpiece, relaxed slouch fit, and ribbed trim."
+  },
+  {
+    "id": 22,
+    "title": "TRAVIS SCOTT FLAME TOUR HOODIE",
+    "price": "₹5,499",
+    "numericPrice": 5499,
+    "category": "Hoodie",
+    "gender": "Women",
+    "image": "/products/women-travis-scott-flame-hoodie.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 18,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Midnight black heavyweight cotton hoodie featuring high-impact Travis Scott fire-flame typography back print, tour lyrics, and relaxed boxy drape."
+  },
+  {
+    "id": 23,
+    "title": "BUTTER CREAM RELAXED FLEECE HOODIE",
+    "price": "₹4,299",
+    "numericPrice": 4299,
+    "category": "Hoodie",
+    "gender": "Women",
+    "image": "/products/women-butter-cream-hoodie.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 26,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Ultra-soft pastel butter cream brushed fleece hoodie with seamless hood construction, oversized cocoon silhouette, and tonal micro branding."
+  },
+  {
+    "id": 24,
+    "title": "FOREST GREEN COZY OVERSIZED HOODIE",
+    "price": "₹4,299",
+    "numericPrice": 4299,
+    "category": "Hoodie",
+    "gender": "Women",
+    "image": "/products/women-forest-green-hoodie.png",
+    "fit": "",
+    "isFeatured": true,
+    "stock": 22,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Rich deep forest green 400 GSM heavyweight brushed back fleece hoodie with double-layered hood, dropped shoulders, and kangaroo utility pocket."
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 6,
+    "productId": 1,
+    "author": "Vikram Malhotra",
+    "city": "Gurugram",
+    "rating": 5,
+    "title": "Perfection in a boxy cut",
+    "comment": "Top tier construction and fabric handfeel.",
+    "fit": "True to Size",
+    "verified": true,
+    "createdAt": "2026-09-14T09:36:22.002Z",
+    "helpfulCount": 1
+  },
+  {
+    "id": 1,
+    "productId": 1,
+    "author": "Aarav Sharma",
+    "city": "Mumbai",
+    "rating": 5,
+    "title": "The fabric drape is insane!",
+    "comment": "The 240 GSM weight is heavy yet super breathable. Dragon graphics have a tactile rubberized puff feel. Definitely fits boxy and oversized, go true to size for that streetwear silhouette.",
+    "fit": "True to Size",
+    "verified": true,
+    "createdAt": "2026-08-12T10:30:00Z",
+    "helpfulCount": 38
+  },
+  {
+    "id": 2,
+    "productId": 1,
+    "author": "Kabir Verma",
+    "city": "Delhi",
+    "rating": 5,
+    "title": "Best luxury tee I own",
+    "comment": "Washed it three times, zero shrink and colors remain pitch black and vivid. Worth every rupee.",
+    "fit": "Runs Slightly Large",
+    "verified": true,
+    "createdAt": "2026-08-20T14:15:00Z",
+    "helpfulCount": 19
+  },
+  {
+    "id": 3,
+    "productId": 2,
+    "author": "Rohan Mehra",
+    "city": "Bengaluru",
+    "rating": 5,
+    "title": "Raglan cut is timeless",
+    "comment": "Contrast sleeves and vintage motorsports look get compliments everywhere. Stitching quality is 10/10.",
+    "fit": "True to Size",
+    "verified": true,
+    "createdAt": "2026-08-25T16:45:00Z",
+    "helpfulCount": 24
+  },
+  {
+    "id": 4,
+    "productId": 10,
+    "author": "Ananya Roy",
+    "city": "Bengaluru",
+    "rating": 5,
+    "title": "Cutest cropped fleece drop!",
+    "comment": "The raw hem crop sits perfectly with high-waisted cargos. Pale butter color is subtle and collegiate print is stunning.",
+    "fit": "True to Size",
+    "verified": true,
+    "createdAt": "2026-09-02T11:20:00Z",
+    "helpfulCount": 42
+  },
+  {
+    "id": 5,
+    "productId": 11,
+    "author": "Sneha Patel",
+    "city": "Ahmedabad",
+    "rating": 5,
+    "title": "Electric dragon artwork turns heads",
+    "comment": "The contrast of crimson red with the azure dragon is straight out of Harajuku streetwear. Boxy drape is on point.",
+    "fit": "Oversized",
+    "verified": true,
+    "createdAt": "2026-09-05T09:10:00Z",
+    "helpfulCount": 15
+  }
+]

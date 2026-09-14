@@ -1,0 +1,20 @@
+[
+  {
+    "id": "usr_admin_001",
+    "name": "VANTA Executive Admin",
+    "email": "admin@vanta.com",
+    "role": "admin",
+    "phone": "+91 98765 43210",
+    "passwordHash": "3682f0c96cf8fd79f7baf0354dcc96a2:f141aa7e05571ae75f4364bf7f42f24aaccc98c31f009402ee8bb6874447a9eb89308e4a540dad62fb9d0dfce5fa3b4c68c6a682924c2fac776e766a7cf3c5be",
+    "createdAt": "2026-09-14T20:27:43.396Z"
+  },
+  {
+    "id": "usr_1789417839664_960",
+    "name": "Rohan Sharma",
+    "email": "collector_3962@vantastreetwear.com",
+    "phone": "+91 9123456780",
+    "role": "user",
+    "passwordHash": "f0d6e0961e9d22149f1dfc8f55a87455:8286fb3d1532304ac7f2c79ccb02f2106a439368bd6eeccd539487858f4f41b5ee4e6104d8a8ebef9f924f53c6a9386f164ec502e89953a6fd462845319e9a9b",
+    "createdAt": "2026-09-14T20:30:39.858Z"
+  }
+]

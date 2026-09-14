@@ -1,0 +1,16 @@
+[
+  {
+    "code": "VANTA500",
+    "discountType": "fixed",
+    "discountValue": 500,
+    "minOrder": 2500,
+    "description": "₹500 OFF on orders above ₹2,500"
+  },
+  {
+    "code": "DROPDAY",
+    "discountType": "percentage",
+    "discountValue": 15,
+    "minOrder": 5000,
+    "description": "15% VIP discount for orders above ₹5,000"
+  }
+]
