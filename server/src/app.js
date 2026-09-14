@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const PUBLIC_PRODUCTS_DIR = path.resolve(__dirname, '../../public/products')
+const CLIENT_DIST_DIR = path.resolve(__dirname, '../../dist')
 
 export function createApp() {
   const app = express()
@@ -69,6 +70,17 @@ export function createApp() {
     res.status(404).json({
       success: false,
       message: `API endpoint not found: ${req.method} ${req.originalUrl}`
+    })
+  })
+
+  // Serve production client build if present
+  app.use(express.static(CLIENT_DIST_DIR))
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/products')) {
+      return next()
+    }
+    res.sendFile(path.join(CLIENT_DIST_DIR, 'index.html'), (err) => {
+      if (err) next()
     })
   })
 
