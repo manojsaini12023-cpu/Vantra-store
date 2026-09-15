@@ -16,11 +16,18 @@ import { authenticateUser } from './utils/auth.js'
 
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import fsSync from 'node:fs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const PUBLIC_PRODUCTS_DIR = path.resolve(__dirname, '../../public/products')
-const CLIENT_DIST_DIR = path.resolve(__dirname, '../../dist')
+
+const clientPublicProducts = path.resolve(__dirname, '../../client/public/products')
+const legacyPublicProducts = path.resolve(__dirname, '../../public/products')
+const PUBLIC_PRODUCTS_DIR = fsSync.existsSync(clientPublicProducts) ? clientPublicProducts : legacyPublicProducts
+
+const clientDistDir = path.resolve(__dirname, '../../client/dist')
+const legacyDistDir = path.resolve(__dirname, '../../dist')
+const CLIENT_DIST_DIR = fsSync.existsSync(clientDistDir) ? clientDistDir : legacyDistDir
 
 export function createApp() {
   const app = express()
@@ -75,13 +82,15 @@ export function createApp() {
 
   // Serve production client build if present
   app.use(express.static(CLIENT_DIST_DIR))
-  app.get('*', (req, res, next) => {
-    if (req.path.startsWith('/api') || req.path.startsWith('/products')) {
+  app.use((req, res, next) => {
+    if (req.method !== 'GET' || req.path.startsWith('/api') || req.path.startsWith('/products')) {
       return next()
     }
-    res.sendFile(path.join(CLIENT_DIST_DIR, 'index.html'), (err) => {
-      if (err) next()
-    })
+    const indexPath = path.join(CLIENT_DIST_DIR, 'index.html')
+    if (fsSync.existsSync(indexPath)) {
+      return res.sendFile(indexPath)
+    }
+    next()
   })
 
   // Global error handler

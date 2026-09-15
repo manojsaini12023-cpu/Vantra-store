@@ -1,1 +1,104 @@
-[]
+[
+  {
+    "orderId": "VNTA-2026-276305",
+    "orderNumber": "VNTA-2026-276305",
+    "createdAt": "2026-09-15T10:32:56.095Z",
+    "status": "CONFIRMED",
+    "paymentStatus": "PAY_ON_DELIVERY",
+    "paymentMethod": "COD",
+    "customer": {
+      "name": "Rohan Mehra",
+      "email": "rohan@example.com",
+      "phone": "+91 98765 43210",
+      "address": "Penthouse 12, Cyber City",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "pincode": "122002"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "UNLEASH THE DRAGON TEE",
+        "size": "L",
+        "quantity": 1,
+        "numericPrice": 3799,
+        "price": "₹3,799",
+        "image": "/products/tshirt-unleash-dragon.png",
+        "category": "Streetwear"
+      },
+      {
+        "id": 2,
+        "title": "HOT WHEELS RAGLAN TEE",
+        "size": "XL",
+        "quantity": 1,
+        "numericPrice": 3499,
+        "price": "₹3,499",
+        "image": "/products/tshirt-hotwheels.png",
+        "category": "Streetwear"
+      }
+    ],
+    "pricing": {
+      "subtotal": 7298,
+      "discountAmount": 730,
+      "appliedPromo": "VANTA10",
+      "shippingFee": 0,
+      "totalAmount": 6568
+    },
+    "shipping": {
+      "method": "Express Courier Air (BlueDart / Delhivery)",
+      "trackingStatus": "Order Placed • Preparing for Dispatch",
+      "estimatedDelivery": "17 Sept - 19 Sept"
+    }
+  },
+  {
+    "orderId": "VNTA-2026-893757",
+    "orderNumber": "VNTA-2026-893757",
+    "createdAt": "2026-09-15T10:28:43.882Z",
+    "status": "CONFIRMED",
+    "paymentStatus": "PAY_ON_DELIVERY",
+    "paymentMethod": "COD",
+    "customer": {
+      "name": "Rohan Mehra",
+      "email": "rohan@example.com",
+      "phone": "+91 98765 43210",
+      "address": "Penthouse 12, Cyber City",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "pincode": "122002"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "UNLEASH THE DRAGON TEE",
+        "size": "L",
+        "quantity": 1,
+        "numericPrice": 3799,
+        "price": "₹3,799",
+        "image": "/products/tshirt-unleash-dragon.png",
+        "category": "Streetwear"
+      },
+      {
+        "id": 2,
+        "title": "HOT WHEELS RAGLAN TEE",
+        "size": "XL",
+        "quantity": 1,
+        "numericPrice": 3499,
+        "price": "₹3,499",
+        "image": "/products/tshirt-hotwheels.png",
+        "category": "Streetwear"
+      }
+    ],
+    "pricing": {
+      "subtotal": 7298,
+      "discountAmount": 0,
+      "appliedPromo": null,
+      "shippingFee": 0,
+      "totalAmount": 7298
+    },
+    "shipping": {
+      "method": "Express Courier Air (BlueDart / Delhivery)",
+      "trackingStatus": "Order Placed • Preparing for Dispatch",
+      "estimatedDelivery": "17 Sept - 19 Sept"
+    }
+  }
+]

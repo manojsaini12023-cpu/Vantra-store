@@ -4,9 +4,13 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { store } from '../db/store.js'
 
+import fsSync from 'node:fs'
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const PUBLIC_PRODUCTS_DIR = path.resolve(__dirname, '../../../public/products')
+const clientPublicProducts = path.resolve(__dirname, '../../../client/public/products')
+const legacyPublicProducts = path.resolve(__dirname, '../../../public/products')
+const PUBLIC_PRODUCTS_DIR = fsSync.existsSync(clientPublicProducts) ? clientPublicProducts : legacyPublicProducts
 
 const router = Router()
 

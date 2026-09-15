@@ -1,5 +1,12 @@
 [
   {
+    "code": "VANTA10",
+    "discountType": "percentage",
+    "discountValue": 10,
+    "minOrder": 0,
+    "description": "10% OFF on all orders"
+  },
+  {
     "code": "VANTA500",
     "discountType": "fixed",
     "discountValue": 500,

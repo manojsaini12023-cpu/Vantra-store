@@ -1,34 +1,25 @@
 {
   "name": "clothing-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
-    "dev": "vite",
-    "server": "node server/server.js",
-    "server:dev": "node --watch server/server.js",
-    "test:api": "node server/test-suite.js",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview",
-    "start": "node server/server.js"
-  },
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "^6.1.1",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mongoose": "^9.10.1",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "vite": "^8.3.0"
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\"",
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "server": "npm run dev --prefix server",
+    "server:start": "npm start --prefix server",
+    "start": "node server/server.js",
+    "build": "npm run build --prefix client",
+    "test:api": "npm test --prefix server",
+    "lint": "npm run lint --prefix client",
+    "install:all": "npm install --prefix client && npm install --prefix server"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "oxlint": "^1.81.0"
+    "concurrently": "^9.1.2"
   }
 }
