@@ -447,7 +447,7 @@ export function AdminDashboard({ onClose }) {
   const handleCopySubscribers = () => {
     const emails = subscribers.map((s) => s.email).join('\n')
     navigator.clipboard.writeText(emails)
-    showToast(`Copied ${subscribers.length} VIP emails to clipboard!`)
+    showToast(`Copied ${subscribers.length} subscriber emails to clipboard!`)
   }
 
   // Filtered orders
@@ -566,7 +566,7 @@ export function AdminDashboard({ onClose }) {
           className={`admin-tab-btn ${activeTab === 'subscribers' ? 'active' : ''}`}
           onClick={() => setActiveTab('subscribers')}
         >
-          👥 VIP Waitlist{' '}
+          👥 Subscribers{' '}
           <span className="tab-pill-count">{subscribers.length}</span>
         </button>
       </nav>
@@ -614,7 +614,7 @@ export function AdminDashboard({ onClose }) {
 
                   <div className="admin-metric-card">
                     <div className="metric-header">
-                      <span className="metric-label">VIP SUBSCRIBERS</span>
+                      <span className="metric-label">SUBSCRIBERS</span>
                       <span className="metric-icon">👥</span>
                     </div>
                     <h2 className="metric-value">{stats.totalSubscribers}</h2>
@@ -1181,12 +1181,12 @@ export function AdminDashboard({ onClose }) {
               </div>
             )}
 
-            {/* TAB 5: VIP SUBSCRIBERS */}
+            {/* TAB 5: SUBSCRIBERS */}
             {activeTab === 'subscribers' && (
               <div className="admin-tab-content">
                 <div className="admin-toolbar">
                   <div>
-                    <h3>VIP WAITLIST SUBSCRIBERS ({subscribers.length})</h3>
+                    <h3>SUBSCRIBERS LIST ({subscribers.length})</h3>
                     <p className="cell-subtext">Registered emails for exclusive drop alerts and secret discounts</p>
                   </div>
                   {subscribers.length > 0 && (
@@ -1235,7 +1235,7 @@ export function AdminDashboard({ onClose }) {
                             </td>
                             <td>
                               <span className="status-pill" style={{ backgroundColor: 'rgba(16, 185, 129, 0.15)', color: '#34d399', borderColor: '#10b981' }}>
-                                VIP ACTIVE
+                                ACTIVE
                               </span>
                             </td>
                           </tr>

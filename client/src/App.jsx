@@ -529,6 +529,29 @@ function App() {
   const [heroSlideIndex, setHeroSlideIndex] = useState(0)
   const [isSliderPaused, setIsSliderPaused] = useState(false)
 
+  // Fullscreen Mode Handler
+  const [isFullscreen, setIsFullscreen] = useState(false)
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(Boolean(document.fullscreenElement))
+    }
+    document.addEventListener('fullscreenchange', handleFullscreenChange)
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange)
+  }, [])
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(() => {})
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {})
+      }
+    }
+  }
+
   // Auto-advance hero slider every 4 seconds (pauses on hover)
   useEffect(() => {
     if (isSliderPaused) return
@@ -758,12 +781,12 @@ function App() {
         body: JSON.stringify({ email: newsletterEmail }),
       })
       const data = await res.json()
-      setNewsletterMsg(data.message || 'Thank you for joining the VIP drop!')
+      setNewsletterMsg(data.message || 'Thank you for subscribing!')
       if (data.success) {
         setNewsletterEmail('')
       }
     } catch {
-      setNewsletterMsg('Subscribed! Welcome to the VANTA VIP waitlist.')
+      setNewsletterMsg('Subscribed! Welcome to VANTA.')
       setNewsletterEmail('')
     } finally {
       setNewsletterLoading(false)
@@ -931,6 +954,17 @@ function App() {
       <div className="announcement-bar">
         <span>EXPRESS SHIPPING ACROSS INDIA • CASH ON DELIVERY &amp; INSTANT UPI AVAILABLE</span>
         <div className="announcement-right-group">
+          {/* Fullscreen Toggle */}
+          <button
+            type="button"
+            className="fullscreen-toggle-btn"
+            onClick={toggleFullscreen}
+            title={isFullscreen ? 'Exit Full Screen' : 'View Full Screen'}
+            aria-label={isFullscreen ? 'Exit Full Screen' : 'View Full Screen'}
+          >
+            <span>{isFullscreen ? '⛶ EXIT FULLSCREEN' : '⛶ FULLSCREEN'}</span>
+          </button>
+
           {/* Multi-Currency Switcher */}
           <div className="currency-selector-pill">
             <span className="currency-icon">🌐</span>
@@ -1017,7 +1051,7 @@ function App() {
                       <div className="user-dropdown-name">{user.name}</div>
                       <div className="user-dropdown-email">{user.email}</div>
                       <span className={`user-dropdown-role ${isAdmin ? 'admin' : ''}`}>
-                        {isAdmin ? 'STAFF ADMIN' : 'VIP CLIENT'}
+                        {isAdmin ? 'STAFF ADMIN' : 'CLIENT'}
                       </span>
                     </div>
                     {isAdmin && (
@@ -1067,14 +1101,16 @@ function App() {
               </div>
             )}
 
-            <button
-              type="button"
-              className="nav-button small admin-btn"
-              onClick={handleOpenAdminPortal}
-              title="Open Backend Admin Dashboard"
-            >
-              ⚡ Admin
-            </button>
+            {isAdmin && (
+              <button
+                type="button"
+                className="nav-button small admin-btn"
+                onClick={() => setIsAdminOpen(true)}
+                title="Open Backend Admin Dashboard"
+              >
+                ⚡ Admin
+              </button>
+            )}
             <button
               type="button"
               className="nav-button small wishlist-nav-btn"
@@ -1219,16 +1255,41 @@ function App() {
               </button>
             </div>
 
-            <div className="mobile-admin-bar">
+            {isAdmin && (
+              <div className="mobile-admin-bar">
+                <button
+                  type="button"
+                  className="mobile-admin-link"
+                  onClick={() => {
+                    setMobileMenuOpen(false)
+                    setIsAdminOpen(true)
+                  }}
+                >
+                  ⚡ Staff Admin Dashboard
+                </button>
+              </div>
+            )}
+
+            <div className="mobile-quick-actions">
               <button
                 type="button"
-                className="mobile-admin-link"
+                className="mobile-quick-link"
                 onClick={() => {
                   setMobileMenuOpen(false)
-                  handleOpenAdminPortal()
+                  setIsWishlistOpen(true)
                 }}
               >
-                ⚡ Staff Admin Dashboard
+                ♡ Saved Items {wishlistIds.length > 0 ? `(${wishlistIds.length})` : ''}
+              </button>
+              <button
+                type="button"
+                className="mobile-quick-link"
+                onClick={() => {
+                  setMobileMenuOpen(false)
+                  handleOpenOrders()
+                }}
+              >
+                📦 Track Orders {ordersList.length > 0 ? `(${ordersList.length})` : ''}
               </button>
             </div>
 
@@ -1746,30 +1807,9 @@ function App() {
             </article>
           ))}
         </section>
-
-        <section className="newsletter reveal" id="about">
-          <div className="newsletter-copy">
-            <p className="eyebrow">VANTA VIP // EXCLUSIVE ACCESS</p>
-            <h2>Full winter drop waitlist</h2>
-            <p className="newsletter-sub">Receive priority allocation and private lookbook access before public drop.</p>
-          </div>
-          <form className="newsletter-form-inline" onSubmit={handleNewsletterSubmit}>
-            <input
-              type="email"
-              required
-              placeholder="Enter email for VIP access"
-              value={newsletterEmail}
-              onChange={(e) => setNewsletterEmail(e.target.value)}
-            />
-            <button type="submit" className="primary-btn" disabled={newsletterLoading}>
-              {newsletterLoading ? 'ADDING...' : 'JOIN WAITLIST'}
-            </button>
-          </form>
-          {newsletterMsg && <p className="newsletter-feedback-pill">{newsletterMsg}</p>}
-        </section>
       </main>
 
-      <footer className="brand-footer reveal">
+      <footer className="brand-footer reveal" id="about">
         <div className="footer-top">
           <div className="footer-brand">
             <img src="/vanta-logo-white.png" alt="VANTA Logo" className="footer-logo" />

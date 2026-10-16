@@ -213,20 +213,41 @@ export function ProductDetailModal({
             {/* Size Section */}
             <div className="pdp-size-section">
               <div className="pdp-size-header-row">
-                <span className="pdp-size-label">
-                  SELECT SIZE: <strong>{selectedSize}</strong>
+                <div className="pdp-size-header-left">
+                  <span className="pdp-size-label">
+                    SELECT SIZE: <strong className="pdp-selected-size-val">{selectedSize}</strong>
+                  </span>
                   {SIZE_MEASUREMENTS[selectedSize] && (
-                    <span className="pdp-size-specs-inline">
-                      (Chest: {SIZE_MEASUREMENTS[selectedSize].chest}", Length: {SIZE_MEASUREMENTS[selectedSize].length}")
+                    <span className="pdp-size-specs-pill">
+                      Chest: {SIZE_MEASUREMENTS[selectedSize].chest}" · Length: {SIZE_MEASUREMENTS[selectedSize].length}"
                     </span>
                   )}
-                </span>
+                </div>
                 <button
                   type="button"
                   className="pdp-size-guide-btn"
                   onClick={() => setIsSizeGuideOpen(true)}
+                  title="View detailed fit & measurements table"
                 >
-                  📏 SIZING GUIDE
+                  <svg
+                    className="pdp-ruler-svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M21.3 8.7 8.7 21.3c-.8.8-2 .8-2.8 0L2.7 18.1c-.8-.8-.8-2 0-2.8L15.3 2.7c.8-.8 2-.8 2.8 0l3.2 3.2c.8.8.8 2 0 2.8z" />
+                    <path d="m7.5 10.5 2 2" />
+                    <path d="m10.5 7.5 2 2" />
+                    <path d="m13.5 4.5 2 2" />
+                    <path d="m4.5 13.5 2 2" />
+                  </svg>
+                  <span>SIZING GUIDE</span>
                 </button>
               </div>
 

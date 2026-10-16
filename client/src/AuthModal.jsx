@@ -148,12 +148,12 @@ export function AuthModal({ onAdminSuccess }) {
             </div>
           ) : (
             <div className="auth-brand-wrap">
-              <span className="auth-brand-eyebrow">VANTA ARCHIVE // VIP ACCESS</span>
+              <span className="auth-brand-eyebrow">VANTA ARCHIVE // CLIENT ACCESS</span>
               <h2>{authModalMode === 'signin' ? 'Sign In to Your Account' : 'Create an Account'}</h2>
               <p className="auth-sub">
                 {authModalMode === 'signin'
                   ? 'Access your orders, saved collection fits, and priority checkout.'
-                  : 'Join the VIP drops list, save favorites, and track live deliveries.'}
+                  : 'Save favorites, track live deliveries, and access priority checkout.'}
               </p>
             </div>
           )}
@@ -320,7 +320,7 @@ export function AuthModal({ onAdminSuccess }) {
             ) : authModalMode === 'signin' ? (
               'SIGN IN TO ACCOUNT →'
             ) : (
-              'CREATE ACCOUNT & JOIN VIP →'
+              'CREATE ACCOUNT →'
             )}
           </button>
         </form>

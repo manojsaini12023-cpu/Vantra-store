@@ -119,7 +119,7 @@ export function AuthProvider({ children }) {
     }
 
     saveSession(data.token, data.user)
-    showNotification(data.message || 'Account created! Welcome to VANTA VIP.')
+    showNotification(data.message || 'Account created! Welcome to VANTA.')
     setAuthModalOpen(false)
     return data.user
   }
